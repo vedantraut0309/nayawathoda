@@ -1,0 +1,37 @@
+/* sampark.css */
+
+/* Page Hero specific styling */
+#page-hero-sampark {
+  background-color: var(--highlight-color); /* Using global highlight color */
+  color: var(--text-color-dark);
+}
+
+#page-hero-sampark h1 {
+  color: var(--primary-color);
+}
+
+/* Info Box styling */
+.info-box {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-light);
+  height: 100%;
+}
+
+.info-box h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-light);
+}

@@ -1,0 +1,39 @@
+/* sewa.css */
+
+/* Page Hero specific styling */
+#page-hero-sewa {
+  background-color: var(--highlight-color); /* Using global highlight color */
+  color: var(--text-color-dark);
+}
+
+#page-hero-sewa h1 {
+  color: var(--primary-color);
+}
+
+/* Service Card specific styles */
+.service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header-sewa {
+  background-color: var(--primary-color); /* Default header color */
+  color: var(--text-color-light);
+  padding: 1rem 1.25rem;
+  border-top-left-radius: calc(0.75rem - 1px);
+  border-top-right-radius: calc(0.75rem - 1px);
+  display: flex;
+  align-items: center;
+}
+
+.card-header-sewa h3 {
+  color: var(--text-color-light);
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.service-icon-small {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}

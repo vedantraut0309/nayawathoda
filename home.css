@@ -1,0 +1,100 @@
+.carousel-item {
+  height: 85vh; /* Viewport Height, can be adjusted */
+  min-height: 350px;
+}
+.carousel-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 1rem; /* Padding inside the caption */
+  z-index: 10; /* Ensure caption is on top of the image */
+  bottom: 1.5rem; /* Slightly lower position */
+  left: 5%; /* Align from left */
+  right: 5%; /* Align from right */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-section-wrapper {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* var(--shadow-medium) */
+}
+
+/* Stats, Quick Access, Gallery Section Wrappers */
+.section-wrapper {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* var(--shadow-medium) */
+}
+
+/* Video Section */
+.video-section-wrapper {
+  background-color: #81a2d2fb; /* The blue color from about section */
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); /* Increased shadow for visibility */
+}
+
+.video-section-wrapper h2 {
+  color: #fff;
+}
+
+.video-section-wrapper p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.video-section-wrapper .ratio {
+  border: 3px solid #fff; /* Add a white border around the video player */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+/* Gallery Section Styles */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* var(--shadow-light) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* var(--shadow-medium) */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item .image-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  padding: 1.5rem 1rem 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}

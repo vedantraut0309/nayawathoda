@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>महत्त्वाची आकडेवारी - ग्रामपंचायत नया वाठोडा</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js ला style.css नंतर आणि script.js च्या आधी लोड करणे महत्त्वाचे आहे -->
+    <link rel="stylesheet" href="stats.css" />
+  </head>
+  <body>
+    <header class="sticky-top" role="banner">
+      <nav class="navbar navbar-expand-lg" aria-label="मुख्य नेव्हिगेशन">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <span>ग्रामपंचायत नया वाठोडा</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="नेव्हिगेशन उघडा"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">मुख्यपृष्ठ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >महत्त्वाची आकडेवारी</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yojna.html">योजना</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sewa.html">सेवा</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="padadhikari.html">पदाधिकारी</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sampark.html">संपर्क</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <section
+        id="page-hero"
+        class="py-5"
+        style="background-color: var(--highlight-color)"
+        aria-label="पृष्ठ शीर्षक"
+      >
+        <div class="container text-center">
+          <h1 class="display-4 fw-bold">
+            ग्राम विकासाची महत्त्वपूर्ण आकडेवारी
+          </h1>
+          <p class="lead mt-3">
+            तुमच्या ग्रामपंचायतीच्या प्रगतीची आणि महत्त्वाच्या माहितीची ताजी
+            आकडेवारी येथे उपलब्ध आहे.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="detailed-stats"
+        class="py-5"
+        aria-labelledby="detailedStatsHeading"
+      >
+        <div class="container">
+          <h2 id="detailedStatsHeading" class="text-center mb-5">
+            🎯 ग्रामपंचायत - प्रगती एका दृष्टिक्षेपात
+          </h2>
+
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+              <div class="stats-detail-card p-4 text-center h-100">
+                <span class="stat-icon" aria-hidden="true">👥</span>
+                <h3 class="stat-value" data-target="1379">१,३७९</h3>
+                <p class="stat-label fs-5">एकूण लोकसंख्या</p>
+                <p class="text-muted small">२०२१ च्या जनगणनेनुसार</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="stats-detail-card p-4 text-center h-100">
+                <span class="stat-icon" aria-hidden="true">💧</span>
+                <h3 class="stat-value" data-target="350">३५०</h3>
+                <p class="stat-label fs-5">घरगुती नळ कनेक्शन</p>
+                <p class="text-muted small">जल जीवन मिशन अंतर्गत</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="stats-detail-card p-4 text-center h-100">
+                <span class="stat-icon" aria-hidden="true">🏠</span>
+                <h3 class="stat-value" data-target="527">0</h3>
+                <p class="stat-label fs-5">नोंदणीकृत मालमत्ता</p>
+                <p class="text-muted small">
+                  ग्रामपंचायतीकडे नोंद असलेल्या मिळकती.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="stats-detail-card p-4 text-center h-100">
+                <span class="stat-icon" aria-hidden="true">📚</span>
+                <h3 class="stat-value" data-target="90" data-unit="%">९०%</h3>
+                <p class="stat-label fs-5">साक्षरता दर</p>
+                <p class="text-muted small">
+                  गावातील एकूण साक्षर लोकांचे प्रमाण.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-10 offset-lg-1">
+              <div
+                class="p-4"
+                style="
+                  background-color: var(--background-light);
+                  border-left: 5px solid var(--accent-color);
+                "
+              >
+                <h4 class="text-dark">📊 आकडेवारीचा स्त्रोत आणि उद्देश</h4>
+                <p>
+                  वरील आकडेवारी ग्रामपंचायत नया वठोडाच्या अधिकृत नोंदी आणि
+                  सरकारी अहवालांवर आधारित आहे. या माहितीचा उद्देश ग्रामस्थांना
+                  आणि प्रशासनाला विकासाचे मापन करण्यासाठी मदत करणे आहे. आकडेवारी
+                  दर तीन महिन्यांनी अद्ययावत केली जाते.
+                </p>
+                <a href="sampark.html" class="btn btn-accent btn-sm"
+                  >अधिक माहितीसाठी संपर्क साधा</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="area-stats" class="py-5 bg-light">
+        <div class="container">
+          <div class="section-wrapper shadow-lg p-4 p-md-5 rounded">
+            <h2 class="text-center mb-4">🏞️ क्षेत्रफळ (हेक्टर मध्ये)</h2>
+            <p class="text-center text-muted mb-5">
+              एकूण भौगोलिक क्षेत्राचे विभागणीनुसार विश्लेषण
+            </p>
+            <div class="chart-container">
+              <canvas id="landAreaChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="development-works" class="py-5">
+        <div class="container">
+          <div class="section-wrapper shadow-lg p-4 p-md-5 rounded">
+            <h2 class="text-center mb-5">🛣️ ग्रामपंचायत विकास कामे</h2>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 work-card">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span class="work-icon">🎨</span> अंगणवाडी दुरुस्ती व
+                      सुशोभीकरण
+                    </h3>
+                    <p class="card-text text-muted">
+                      मुलांसाठी सुरक्षित आणि आकर्षक वातावरण निर्माण करण्यासाठी
+                      अंगणवाडीची दुरुस्ती, रंगरंगोटी आणि सुशोभीकरण करण्यात आले.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 work-card">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span class="work-icon">💧</span> शुद्ध पाणी योजना
+                    </h3>
+                    <p class="card-text text-muted">
+                      'जल जीवन मिशन' अंतर्गत प्रत्येक घरात नळाद्वारे शुद्ध पाणी
+                      पुरवण्याची योजना यशस्वीरित्या राबविण्यात आली.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 work-card">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span class="work-icon">🧹</span> स्वच्छता आणि आरोग्य
+                      अभियान
+                    </h3>
+                    <p class="card-text text-muted">
+                      गावात नियमित स्वच्छता मोहीम आणि आरोग्य तपासणी शिबिरांचे
+                      आयोजन करून सार्वजनिक आरोग्य सुधारण्यासाठी प्रयत्न केले
+                      जातात.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 work-card">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span class="work-icon">🛣️</span> सिमेंट-काँक्रीट रस्ते
+                      बांधकाम
+                    </h3>
+                    <p class="card-text text-muted">
+                      गावातील मुख्य रस्त्यांचे आणि अंतर्गत गल्ल्यांचे
+                      सिमेंट-काँक्रीट वापरून पक्के बांधकाम करण्यात आले.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 work-card">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span class="work-icon">🌳</span> वृक्षरोपण कार्यक्रम
+                    </h3>
+                    <p class="card-text text-muted">
+                      'माझी वसुंधरा' अभियानांतर्गत गावात मोठ्या प्रमाणात
+                      वृक्षारोपण करण्यात आले. यामुळे पर्यावरणाचा समतोल राखण्यास
+                      आणि गावाचे सौंदर्य वाढविण्यात मदत झाली.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section mt-5 py-4" role="contentinfo">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h4>संपर्क माहिती</h4>
+            <address>
+              <p>
+                ग्रामपंचायत कार्यालय,<br />
+                नया वाठोडा, ता. मोर्शी,<br />
+                जि. अमरावती - ४४४९०६
+              </p>
+              <p>📞 फोन: ९८७६५४३२२१</p>
+              <p>📧 ईमेल: grampanchayat@example.com</p>
+            </address>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h4>कार्यालयीन वेळ</h4>
+            <ul>
+              <p>सोमवार ते शनिवार: स. ९:०० ते सा. ६:३०</p>
+
+              <li>रविवार: सुट्टी</li>
+              <li>(सरकारी सुट्ट्या वगळता)</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h4>महत्त्वाचे दुवे</h4>
+            <ul>
+              <li><a href="index.html">मुख्यपृष्ठ</a></li>
+              <li><a href="stats.html">महत्त्वाची आकडेवारी</a></li>
+              <li>
+                <a href="yojna.html" class="text-accent">ग्रामपंचायत योजना</a>
+              </li>
+              <li><a href="sewa.html">नागरिकांसाठी सेवा</a></li>
+              <li><a href="padadhikari.html">पदाधिकारी</a></li>
+              <li><a href="sampark.html">संपर्क साधा</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center pt-3 border-top">
+          <p>&copy; २०२५ ग्रामपंचायत नया वाठोडा | सर्व हक्क राखीव.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

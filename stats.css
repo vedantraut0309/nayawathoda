@@ -1,0 +1,38 @@
+/* stats.css */
+
+/* Page Hero specific styling */
+#page-hero {
+  background-color: var(--highlight-color); /* Using global highlight color */
+  color: var(--text-color-dark);
+}
+
+#page-hero h1 {
+  color: var(--primary-color);
+}
+
+/* Stats Detail Card */
+.stats-detail-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* Chart.js Container Styling */
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 40vh;
+  max-width: 500px; /* Adjust max-width as needed */
+}

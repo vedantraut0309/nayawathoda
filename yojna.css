@@ -1,0 +1,43 @@
+/* yojna.css */
+
+/* Page Hero specific styling */
+#page-hero {
+  background-color: var(--highlight-color); /* Using global highlight color */
+  color: var(--text-color-dark);
+}
+
+#page-hero h1 {
+  color: var(--primary-color);
+}
+
+/* Scheme Card specific styles */
+.scheme-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scheme-card-header {
+  background-color: var(--primary-color); /* Default header color */
+  color: var(--text-color-light);
+  padding: 1rem 1.25rem;
+  border-top-left-radius: calc(0.75rem - 1px);
+  border-top-right-radius: calc(0.75rem - 1px);
+}
+
+.scheme-card-header h3 {
+  color: var(--text-color-light);
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.scheme-tag {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,348 @@
+/* General Styles */
+:root {
+  --primary-color: #1976d2; /* Deep Blue */
+  --accent-color: #ff9800; /* Orange */
+  --text-color-dark: #333333;
+  --text-color-light: #f8f9fa;
+  --background-light: #f8f9fa;
+  --background-dark: #212529;
+  --highlight-color: #e3f2fd; /* Light Blue */
+  --border-color: #dee2e6;
+  --shadow-light: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --shadow-medium: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color-dark);
+  background-color: var(--background-light);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  color: var(--text-color-dark);
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow-medium);
+}
+
+.navbar-brand {
+  color: rgb(238, 234, 226);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-size: 22px; /* Reduced for mobile */
+  padding-left: 1rem; /* Reduced for mobile */
+}
+
+.navbar-brand span {
+  white-space: nowrap; /* Prevent text from wrapping on small screens */
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 26px; /* Slightly larger for tablets and desktops */
+    padding-left: 2rem;
+  }
+}
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-color-light) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1565c0; /* Darker shade of primary */
+  border-color: #1565c0;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--text-color-dark); /* Ensure good contrast */
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: #fb8c00; /* Darker shade of accent */
+  border-color: #fb8c00;
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-color-light);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1565c0;
+  border-color: #1565c0;
+}
+
+.btn-full-width-mobile {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn-full-width-mobile {
+    width: auto;
+  }
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Footer */
+.footer-section {
+  background-color: var(--background-dark);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-section h4 {
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section address,
+.footer-section ul {
+  font-size: 0.95rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-section a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.footer-section .border-top {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Hero Sections */
+#page-hero {
+  background-color: var(--highlight-color);
+  color: var(--text-color-dark);
+  padding: 4rem 0;
+}
+
+#page-hero h1 {
+  color: var(--primary-color);
+}
+
+/* Specific for index.html hero */
+.hero-section {
+  position: relative;
+  height: 60vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.hero-section .carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.hero-cta-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  color: var(--text-color-light);
+}
+
+.hero-cta-container .cta-prominent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--text-color-dark);
+  font-weight: 700;
+}
+
+.hero-cta-container .cta-prominent:hover {
+  background-color: #fb8c00;
+  border-color: #fb8c00;
+}
+
+/* Stats Section */
+.stats-section .stat-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-light);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-section .stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stats-section .stat-label {
+  font-size: 1.1rem;
+  color: var(--text-color-dark);
+}
+
+/* Quick Access Section */
+.access-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-light);
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.access-card .card-title {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Utility classes for specific pages to use new variables */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.text-accent {
+  /* color: var(--accent-color) !important; */
+}
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+.bg-accent {
+  background-color: var(--accent-color) !important;
+}
+.text-highlight {
+  color: var(--highlight-color) !important;
+} /* For padadhikari.html */
+
+/* Carousel Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ddd; /* Optional: halka border */
+}
+
+.mySlides {
+  display: none; /* Default me hidden rahegi */
+}
+
+/* Caption styling */
+.text-block {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.495);
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 600px) {
+  .text-block {
+    width: 90%;
+    bottom: 10%;
+    padding: 10px;
+  }
+  .text-block h2 {
+    font-size: 1.2rem;
+  }
+  .text-block p {
+    font-size: 0.9rem;
+  }
+}
